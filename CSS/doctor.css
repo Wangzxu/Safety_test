@@ -1,0 +1,245 @@
+/* 超链接样式 */
+a {
+    color: #09f;
+    text-decoration: none;
+}
+a:hover {
+    color: #03c;/*深蓝*/
+}
+a:active{
+    color:#F90;
+}
+
+/* 顶端三个不动的超链接样式 */
+.switch{
+    margin-left: 60px;
+    font-size: 18px;
+}
+.logout{
+    float: right;
+    margin-right: 60px;
+    border-radius: 30px;
+}
+.logout:link, .logout:visited{  
+    background-color: #f44336;  
+    color: white;  
+    padding: 8px 20px;  
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 18px; 
+    display: inline-block;
+}
+.logout:hover, .logout:active {  
+    background-color: red;
+}
+
+/* 医生资料卡 */
+.wrapper {
+    width: 550px;
+    height: 370px;
+    /* background-color: rgba(11, 19, 23, 0.83); */
+    /* rgba(7, 29, 39, 0.83) */
+    /* 设置居中 */
+    margin: 50px auto;
+    border: 3px solid #ddd;
+    border-top-right-radius: 30px;
+}
+
+.profile-image {
+    height: auto;
+    float: left;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-top: 10px solid #09f;
+    /* 通过margin-top将h2上移，盖住上边框 */
+    margin-top: -10px;
+    border-left: 10px solid #09f;
+    /* 通过margin-top将h2上移，盖住上边框 */
+    margin-left: -10px;
+}
+
+.content {
+    /* padding: 38px 28px 20px 33px; */
+    /* position: relative; */
+    width: 250px;
+    padding-top: 12%;
+    padding-right: 6%;
+    float: right;
+    font-size: 17px;
+}
+
+p{
+    margin: 0px;
+}
+
+/* 输入框样式 */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0px;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+}
+
+.change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+  
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.search-box {
+    /* font-family: FontAwesome; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-bottom: 20px;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    height: 40px;
+    border: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    opacity: 0;
+    transition-delay: 99999999s;
+    transition-duration: 1s;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    color: white;
+    background: black;
+}
+
+.search-btn {
+    transition: 0.5s;
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;	
+    border: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(51, 159, 150);
+    font-size: 16px;
+    transition: 0.6s;
+    line-height: 50px;
+    width: 0px;
+}
+
+/* 提交按钮样式 */
+.btn-submit {
+    width: 150px;
+    /* background-color: #5995fd; */
+    background-color: #09f;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: large;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.filebox{ 
+    position: relative;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(204, 204, 204, 0.253);
+    text-align: center;
+}
+
+.file { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+/* 表格样式 */
+table {
+    margin-left:auto;margin-right:auto;
+    font-size:  18px;
+    border-width: 1px;
+    border-color: #ddd;
+    border-collapse: collapse;
+}
+
+.tableheader{
+    background-color: #09f;
+}
+
+table td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #ddd;
+    text-align: center;
+}
